@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+$base-color: #b3b3cb;
+
+$shadow: 2px 2px 3px 3px darken($base-color, 15%);
+$preset-border: 2px solid darken($base-color, 45%);
+
+body {
+  background-color: $base-color;
+  margin: 15px auto;
+}
+
+#preview {
+  display: inline-block;
+}
+
+
+.toolbar {
+  position: relative;
+  font-family: 'Kanit';
+  border: $preset-border;
+  background-color: darken($base-color, 25%);
+  box-shadow: $shadow;
+  padding: 3px 4px 3px 4px;
+  font-size: 20px;
+  i {
+    width: 20px;
+    right: 4px;
+    color: black;
+    position: absolute;
+    top: 7px;
+  }
+}
+
+i:hover {
+  color: lighten($base-color, 25%);
+  cursor: pointer;
+}
+
+.editorStyle {
+  width: 600px;
+  margin: 20px auto;
+  .toolbar {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+    resize: vertical;
+    border: $preset-border;
+    background-color: lighten($base-color, 10%);
+    box-shadow: $shadow;
+    border-top: none;
+    min-height: 200px;
+    max-height: 700px;
+    padding-top: 10px;
+    font-size: 14px;
+    padding-left: 5px;
+    outline: none;
+    padding-right: 3px;
+  }
+}
+
+.previewStyle {
+  width: 800px;
+  margin: 10px auto;
+  border: $preset-border;
+  background-color: lighten($base-color, 10%);
+  box-shadow: $shadow;
+  border-top: none;
+  padding-right: 25px;
+  min-height: 200px;
+  overflow-wrap: break-word;
+  font-size: 16px;
+  font-family: 'Noto Serif', serif;
+  .toolbar {
+    width: 100%;
+    left: -2px;
+    padding-right: 21px;
+  }
+  #preview {
+    width: 100%;
+    margin-top: -10px;
+    padding-left: 10px;
+  }
+}
+
+.maximized {
+  min-height: 100vh;
+  width: 95%;
+  margin: auto;
+  textarea {
+    min-height: 95vh;
+    resize: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+#preview {
+  h1,h2 {
+    border-bottom: $preset-border;
+    padding-bottom: 5px;
+  }
+  code {
+    background-color: white;
+    padding: 2px 2px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  pre {
+    background-color: white;
+    padding: 4px 3px;
+  }
+  blockquote {
+    border-left: 4px solid #004d99;
+    padding-left: 5px;
+    color: #004d99;
+    
+  }
+}

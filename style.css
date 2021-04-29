@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
+body {
+  background-color: #b3b3cb;
+  margin: 15px auto;
+}
+
+#preview {
+  display: inline-block;
+}
+
+.toolbar {
+  position: relative;
+  font-family: 'Kanit';
+  border: 2px solid #3e3e5b;
+  background-color: #676797;
+  -webkit-box-shadow: 2px 2px 3px 3px #8686ac;
+          box-shadow: 2px 2px 3px 3px #8686ac;
+  padding: 3px 4px 3px 4px;
+  font-size: 20px;
+}
+
+.toolbar i {
+  width: 20px;
+  right: 4px;
+  color: black;
+  position: absolute;
+  top: 7px;
+}
+
+i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.editorStyle {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.editorStyle .toolbar {
+  width: 100%;
+}
+
+.editorStyle textarea {
+  width: 100%;
+  resize: vertical;
+  border: 2px solid #3e3e5b;
+  background-color: #d1d1e0;
+  -webkit-box-shadow: 2px 2px 3px 3px #8686ac;
+          box-shadow: 2px 2px 3px 3px #8686ac;
+  border-top: none;
+  min-height: 200px;
+  max-height: 700px;
+  padding-top: 10px;
+  font-size: 14px;
+  padding-left: 5px;
+  outline: none;
+  padding-right: 3px;
+}
+
+.previewStyle {
+  width: 800px;
+  margin: 10px auto;
+  border: 2px solid #3e3e5b;
+  background-color: #d1d1e0;
+  -webkit-box-shadow: 2px 2px 3px 3px #8686ac;
+          box-shadow: 2px 2px 3px 3px #8686ac;
+  border-top: none;
+  padding-right: 25px;
+  min-height: 200px;
+  overflow-wrap: break-word;
+  font-size: 16px;
+  font-family: 'Noto Serif', serif;
+}
+
+.previewStyle .toolbar {
+  width: 100%;
+  left: -2px;
+  padding-right: 21px;
+}
+
+.previewStyle #preview {
+  width: 100%;
+  margin-top: -10px;
+  padding-left: 10px;
+}
+
+.maximized {
+  min-height: 100vh;
+  width: 95%;
+  margin: auto;
+}
+
+.maximized textarea {
+  min-height: 95vh;
+  resize: none;
+}
+
+.hide {
+  display: none;
+}
+
+#preview h1, #preview h2 {
+  border-bottom: 2px solid #3e3e5b;
+  padding-bottom: 5px;
+}
+
+#preview code {
+  background-color: white;
+  padding: 2px 2px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#preview pre {
+  background-color: white;
+  padding: 4px 3px;
+}
+
+#preview blockquote {
+  border-left: 4px solid #004d99;
+  padding-left: 5px;
+  color: #004d99;
+}
+/*# sourceMappingURL=style.css.map */
